@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me | Aline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="nav" id="mainNav">
+        <button class="logo-btn">A</button>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="services.html">Services</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html" class="contact-link active">Contact Me</a>
+        <span class="menu-icon" id="menuToggle">&#9776;</span>
+    </div>
+    <section class="contact-section">
+        <h1 class="contact-title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:umugwanezaaline77@gmail.com">umugwanezaaline77@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+250796023452">+250 796 023 452</a></p>
+                 <div class="map-responsive">
+                   <iframe src="https://www.google.com/maps?q=Kagugu,+Kigali,+Rwanda&output=embed" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <form class="contact-form" method="POST" action="https://formspree.io/f/yourformid">
+                   <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                 <label for="Subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <div class="soc">
+            <a href="https://www.linkedin.com/in/umugwaneza-aline-655146325"><img src="img/linkedin.jpeg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/a_li_ne97?igsh=dGs5MXVnbnpsbzIz"><img src="img/ig.jpg" alt="Instagram"></a>
+            <a href="https://telegram.org/dl"><img src="img/tel.jpg" alt="Telegram"></a>
+            <a href="https://www.facebook.com/share/15erRQdApJ/"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://wa.me/0796023452"><img src="img/w.jpeg" alt="WhatsApp"></a>
+            <a href="https://www.threads.net/@a_li_ne97"><img src="img/th.jpg" alt="Threads"></a>
+            <a href="https://github.com/AlineHub-tech"><img src="img/GitHub.jpeg" alt="GitHub"></a>
+        </div>
+        <p class="footer-text">&copy; 2025 Umugwaneza Aline. All rights reserved.</p>
+    </footer>
+    <script>
+    document.getElementById('menuToggle').onclick = function() {
+        document.getElementById('mainNav').classList.toggle('open');
+    };
+    </script>
+</body>
+</html>

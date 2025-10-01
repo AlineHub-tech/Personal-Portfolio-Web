@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills | Umugwaneza Aline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+    <nav class="nav">
+        <button class="logo-btn">A</button>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="services.html">Services</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html" class="contact-link">Contact Me</a>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </nav>
+
+    <section class="skills-section">
+        <div class="skills-title">My Skills</div>
+        <div class="skills-list">
+            <div class="skill-card">
+                <span class="skill-emoji">💻</span>
+                <h3>Frontend Development</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                    <span class="progress-label">90%</span>
+                </div>
+                <p>HTML, CSS, JavaScript, Responsive UI</p>
+            </div>
+            <div class="skill-card">
+                <span class="skill-emoji">🖼️</span>
+                <h3>Graphic Design</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                    <span class="progress-label">85%</span>
+                </div>
+                <p>Photoshop, Illustrator, Figma</p>
+            </div>
+            <div class="skill-card">
+                <span class="skill-emoji">🗄️</span>
+                <h3>Backend Development</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                    <span class="progress-label">75%</span>
+                </div>
+                <p>PHP, MySQL, APIs</p>
+            </div>
+            <div class="skill-card">
+                <span class="skill-emoji">📷</span>
+                <h3>Photography</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                    <span class="progress-label">70%</span>
+                </div>
+                <p>Portraits, Events, Editing</p>
+            </div>
+            <div class="skill-card">
+                <span class="skill-emoji">🛠️</span>
+                <h3>ICT Support</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                    <span class="progress-label">80%</span>
+                </div>
+                <p>Hardware, Software, Troubleshooting</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="soc">
+            <a href="https://www.linkedin.com/in/umugwaneza-aline-655146325"><img src="img/linkedin.jpeg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/a_li_ne97?igsh=dGs5MXVnbnpsbzIz"><img src="img/ig.jpg" alt="Instagram"></a>
+            <a href="https://telegram.org/dl"><img src="img/tel.jpg" alt="Telegram"></a>
+            <a href="https://www.facebook.com/share/15erRQdApJ/"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://wa.me/0796023452"><img src="img/w.jpeg" alt="WhatsApp"></a>
+            <a href="https://www.threads.net/@a_li_ne97"><img src="img/th.jpg" alt="Threads"></a>
+            <a href="https://github.com/AlineHub-tech"><img src="img/GitHub.jpeg" alt="GitHub"></a>
+        </div>
+        <div class="footer-text">
+            &copy; 2025 Umugwaneza Aline. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

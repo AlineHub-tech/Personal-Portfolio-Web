@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Umugwaneza Aline - CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            /* background: #eaeaea; */
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .cv-wrapper {
+            display: flex;
+            max-width: 800px;
+             margin: 28px auto;
+            background: #fff;
+            /* border-radius: 14px; */
+            box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+            overflow: hidden;
+        }
+        .cv-sidebar {
+            background: #14532d;
+            color: #fff;
+            width:40%;
+             min-width: 0;
+            padding: 16px 8px 16px 8px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        .cv-photo {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 17px;
+            /* margin-top:10%; */
+            margin-left:20%;
+            border: 5px solid #fff6f6;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            
+        }
+         .cv-sidebar h2 {
+            font-size: 1em;
+            /* margin-bottom: 2px; */
+            font-weight: bold;
+            font-size:20px;
+            letter-spacing: 1px;
+        }
+        .cv-sidebar .cv-role {
+            font-size: 0.93em;
+            color: #ffd580;
+            margin-bottom: 10px;
+            font-weight: 500;
+        } 
+          .cv-edu, .cv-skills, .cv-langs {
+            margin-bottom: 12px;
+            width: 100%;
+        } 
+         .cv-contact h3, .cv-edu h3, .cv-skills h3, .cv-langs h3 {
+            font-size: 0.92em;
+            margin-bottom: 5px;
+            color: #ffd580;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        } 
+        .cv-contact h3,.cv-edu h3, .cv-skills h3, .cv-langs h3 {
+    /* text-align: center; */
+    color: rgb(170, 119, 10);
+    font-size: 22px;
+    margin-left:12%;
+    margin-bottom: 18px;
+    letter-spacing: 2.5px;
+    width: 100%;
+    text-transform: uppercase;
+    line-height: 1.1;
+    position: relative;
+   }
+        .cv-contact ul, .cv-edu ul, .cv-skills ul, .cv-langs ul { 
+            list-style: none;
+             padding: 0; 
+             margin-left:3%; 
+             margin: 0; 
+            font-size: 1em;
+        }
+        .cv-contact ul li, .cv-edu ul li, .cv-skills ul li, .cv-langs ul li {
+            margin-bottom: 4px;
+            color: #e6e6e6;
+             list-style: none;
+            word-break: break-all;
+        }
+        .cv-contact ul li a {
+            color: #e6e6e6;
+            margin-left: 10%;
+            font-size:13px;
+             list-style: none;
+            text-decoration: none;
+        }
+        .cv-contact ul li a:hover {
+            text-decoration: underline;
+             list-style: none;
+        }
+        .cv-contact ul li strong span {
+            color: #ffd580;
+            font-weight: 500;
+            margin-left: 10%;
+        }
+        .cv-contact  span {
+            color: #ffd580;
+            font-weight: 500;
+            margin-left: 10%;
+            font-size:11px;
+        }
+         .cv-edu   ul li  {
+            color: white;
+            font-weight: 500;
+            gap:20px;
+            margin-left: 15%;
+             list-style: none;
+            font-size: 14px;
+        }
+            .cv-edu strong {
+            color: #ffd580;
+            font-weight: 500;
+            gap:20px;
+            margin-left: 8%;
+             list-style: none;
+            font-size: 14px;
+        }
+        .cv-skills-list, .cv-langs-list {
+            display: flex;
+            flex-direction: column;
+            margin-left: 12%;
+            gap:9px;
+            
+        }
+        .cv-skill, .cv-lang {
+            /* background: #fff2cc; */
+            color:white;
+            border-radius: 8px;
+            padding: 2px 7px;
+            font-size: 0.91em;
+            font-weight: 500;
+            
+        }
+        .cv-main {
+            flex: 1;
+            width:90%;
+             min-width: 0;
+            padding: 12px 10px 12px 10px;
+            box-sizing: border-box;
+        }
+        .cv-main h1 {
+            font-size:31px;
+            margin-left:8%;
+            color: #14532d;
+            /* margin-top:10%; */
+            /* letter-spacing: 1px; */
+        }
+        .cv-main .cv-title-role {
+            color:#aa7503;
+            font-size:20px;
+            font-weight: 500;
+            /* margin-top:10%; */
+             margin-left:8%;
+        }
+        .cv-section {
+            margin-bottom: 10px;
+            margin-left:8%;
+        }
+        .cv-section h2 {
+            color: #14532d;
+            font-size: 0.98em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            border-left: 3px solid #ffd580;
+            padding-left: 6px;
+        }
+        .cv-profile {
+            font-size: 0.92em;
+            color: #222;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .cv-job {
+            margin-bottom: 8px;
+        }
+        .cv-job h3 {
+            font-size: 0.95em;
+            color: #14532d;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+        .cv-location, .cv-date {
+            color: #888;
+            font-size: 0.9em;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .cv-job ul {
+            margin-left: 10px;
+            color: #222;
+            font-size: 0.9em;
+            line-height: 1.3;
+        }
+        .cv-job ul li {
+            margin-bottom: 2px;
+        }
+        @media (max-width: 700px) {
+            .cv-wrapper {
+                flex-direction: column;
+                max-width: 98vw;
+            }
+            .cv-sidebar {
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 10px 2vw;
+            }
+            .cv-main {
+                padding: 10px 2vw;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="cv-wrapper">
+    <!-- SIDEBAR -->
+    <aside class="cv-sidebar">
+        <img src="img/we.jpg"alt="umugwaneza aline"class="cv-photo">
+           <div class="cv-contact">
+            <h3>Contact</h3>
+            <ul>
+                <li>
+                    <a href="tel:+250796023452">
+                        📞 +250 796 023 452
+                    </a><br><br>
+                </li>
+                <li>
+                    <a href="mailto:umugwanezaaline77@gmail.com">
+                        ✉️  umugwanezaaline77@gmail.com
+                    </a><br><br>
+                </li>
+                <li>
+                    <span style="font-size:11px;">📍</span> Kigali, Rwanda<br><br>
+                </li>
+                <li>
+                    <a href="https://alinedeveloper.lovestoblog.com" target="_blank">
+                        🌐 alinedeveloper.lovestoblog.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="cv-edu">
+            <h3>Education</h3>
+            <ul>
+                <li><strong>KEPLER CORREGE</strong>:<br>May2025<br>ICT & Digital Skills Program</li><br>
+                <li><strong>GREENLAND FILM SCHOOL</strong>:<br>May-AUG2025<br>Certificate in Photography <br> & Graphic Design</li><br>
+                <li><strong>BULINGA TSS</strong>:<br>2021-2024<br>A2 Software Development</li><br>
+            </ul>
+        </div>
+        <div class="cv-skills">
+            <h3>carrer Skills</h3>
+            <div class="cv-skills-list">
+                <span class="cv-skill">Frontend & Backend</span>
+                 <span class="cv-skill">SQL/MySQL & PHP</span>
+                  <span class="cv-skill">HTML & CSS</span>
+                 <span class="cv-skill">Graphic Design</span>
+                 <span class="cv-skill">Photoshop & Illustrator</span>
+                 <span class="cv-skill">Photography</span>
+                  <span class="cv-skill">Microsoft Office</span>
+                <span class="cv-skill">ICT Support</span>
+                
+            </div>
+        </div>
+          <div class="cv-skills">
+            <h3>Skills</h3>
+            <div class="cv-skills-list">
+                 <span class="cv-skill">Time Management</span>
+                <span class="cv-skill">Project Management</span>
+                <span class="cv-skill">Communication</span>
+                <span class="cv-skill">Problem-Solving</span>
+                <span class="cv-skill">self-confdent</span>
+                    <span class="cv-skill">Displine</span>
+                <span class="cv-skill">Smart</span>
+                <span class="cv-skill">Teamwork</span>
+                
+                
+            </div>
+        </div>
+        <div class="cv-langs">
+            <h3>Languages</h3>
+            <div class="cv-langs-list">
+                <span class="cv-lang">English</span><br>
+                <span class="cv-lang">Kinyarwanda</span>
+            </div>
+        </div>
+    </aside>
+    <!-- MAIN -->
+    <main class="cv-main">
+        <h1>Umugwaneza Aline</h1>
+        <div class="cv-title-role">Software Developer | Graphic Designer |<br> Frontend Developer | Photographer</div>
+        <div class="cv-section">
+            <h2>Profile</h2>
+            <div class="cv-profile">
+                Passionate and detail-oriented System Developer and Graphic Designer with hands-on experience in web development, digital design, and ICT support. Skilled in building user-friendly systems, creative visuals, and providing technical solutions for organizations and individuals.
+            </div>
+        </div>
+        <div class="cv-section">
+            <h2>Work Experience</h2>
+            <div class="cv-job">
+                <h3>System Developer — Unity Company</h3>
+                <span class="cv-location">Kigali, Rwanda</span>
+                <span class="cv-date">Jan 2025 – Present</span>
+                <ul>
+                    <li>Developed a payroll management system to streamline employee salary payments and automate payment processes.</li>
+                    <li>Built using HTML, CSS, PHP, and MySQLi, with a user-friendly dashboard for HR and management.</li>
+                    <li>Integrated features for generating salary reports, tracking paid/unpaid staff, and notifying employees via SMS upon payment.</li>
+                    <li>Reduced manual errors and saved time through efficient digital processing.</li>
+                </ul>
+            </div>
+            <div class="cv-job">
+                <h3>Graphic Designer</h3>
+                <span class="cv-location">Kigali, Rwanda</span>
+                <span class="cv-date">July 2025 – Present</span>
+                <ul>
+                    <li>Designed a variety of marketing materials including posters, flyers, logos, presentations, and social media content.</li>
+                    <li>Used Photoshop CC, Illustrator, and Figma to create clean, impactful visuals aligned with clients' needs.</li>
+                    <li>Worked on creative design for memorial events (Kwibuka), faith-based content, and motivational campaigns for youth empowerment.</li>
+                </ul>
+            </div>
+            <div class="cv-job">
+                <h3>ICT Intern — Kepler College (Freelance)</h3>
+                <span class="cv-location">Kigali, Rwanda</span>
+                <span class="cv-date">May 2025 – Present</span>
+                <ul>
+                    <li>Assisted with IT equipment setup, software installation, system troubleshooting, and providing technical support to staff and students.</li>
+                    <li>Prepared documentation, class materials, and internal reports using Microsoft Word, Excel, and Publisher.</li>
+                    <li>Supported the tech team in maintaining digital learning systems and improving the college’s ICT infrastructure.</li>
+                </ul>
+            </div>
+            <div class="cv-job">
+                <h3>Frontend Developer (Projects)</h3>
+                <span class="cv-location">Kigali, Rwanda</span>
+                <span class="cv-date">December 2024 – Present</span>
+                <ul>
+                    <li>Built responsive websites using HTML, CSS, JavaScript, and PHP.</li>
+                    <li>Created user-friendly interfaces and prototypes using Figma.</li>
+                    <li>Developed an MVP for a Citizen Complaints & Engagement System to help users submit feedback and complaints to local authorities.</li>
+                    <li>Designed both admin and user interfaces, focusing on simplicity and accessibility.</li>
+                </ul>
+            </div>
+            <div class="cv-job">
+                <h3>Photographer</h3>
+                <span class="cv-location">Kigali, Rwanda</span>
+                <span class="cv-date">June 2025 – Present</span>
+                <ul>
+                    <li>Provided professional photography services for events, portraits, and personal branding.</li>
+                    <li>Edited photos using Photoshop CC for high-quality output used in design projects and client portfolios.</li>
+                    <li>Worked with individuals and organizations to create visual stories through photography.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

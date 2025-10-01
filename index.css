@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #d6d6d6;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.nav {
+    display: flex;
+    background-color: rgb(2, 20, 3);
+    gap: 47px;
+   width:70%;
+    margin-left:10%;
+    margin: 2% auto 0 auto;
+    border-radius: 40px;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+}
+.nav a {
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav a:hover {
+    cursor: pointer;
+    color: rgb(128, 86, 10);
+    transform: scale(1.1);
+}
+.logo-btn {
+    font-size: 30px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 9px;
+    font-weight: bold;
+    background-color: orange;
+    border: none;
+    color: #fff;
+}
+h2 {
+    color: white;
+    font-weight: lighter;
+    margin-right: 10%;
+}
+.contact-link {
+    border-radius: 15px;
+    background-color: orange;
+   color:white;
+    padding: 9px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+}
+.contact-link:hover {
+    background-color: white;
+    color:black;
+}
+.menu-icon {
+    display: none;
+    font-size: 36px;
+   color:orange;
+    cursor:pointer;
+    margin-left: auto;
+    margin-right: 18px;
+    z-index: 1001;
+}
+
+/* Hero/Intro Section */
+.int {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    width: 90%;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 40px 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ri {
+    margin-left: 5%;
+    margin-top: 3%;
+    flex: 1;
+    min-width: 260px;
+}
+.ri h2 {
+    margin-bottom: 4%;
+    color: black;
+    font-weight: lighter;
+}
+.ri h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: auto;
+}
+.ri p {
+    font-size: 25px;
+    white-space: nowrap;
+    color: rgb(29, 29, 29);
+    margin-top: 0;
+}
+.left {
+    margin: 20px 50px 0 0;
+    position: relative;
+    top: 0;
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left img {
+    width: 58%;
+    min-width: 120px;
+    max-width: 260px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    background: #fff;
+}
+/* Buttons */
+.ri-buttons {
+    margin-top: 24px;
+    display: flex;
+    gap: 18px;
+}
+.ri-buttons .btn {
+    padding: 10px 24px;
+    background: orange;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    cursor: pointer;
+    display: inline-block;
+}
+.ri-buttons .btn.hire {
+    background: #021403;
+}
+.ri-buttons .btn:hover {
+    background: #fff;
+    color: orange;
+    transform: scale(1.05);
+    border: 1px solid orange;
+}
+
+/* Social icons */
+.soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+.soc img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(100%) contrast(1.2) brightness(0.95);
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: filter 0.2s, transform 0.2s, box-shadow 0.2s;
+    border: 1.5px solid #eee;
+}
+.soc img:hover {
+    filter: grayscale(0%) contrast(1.1) brightness(1.1);
+    transform: scale(1.12);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    border-color: orange;
+}
+
+/* Footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+section {
+    flex: 1;
+}
+footer {
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 12px;
+}
+.footer-text {
+    text-align: center;
+    color: #444;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Typing effect */
+#type-h2, #type-p {
+    border-right: 2px solid #222;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-cursor 0.7s steps(1) infinite;
+}
+@keyframes blink-cursor {
+    0%, 100% { border-color: #222; }
+    50% { border-color: transparent; }
+}
+/* nav responsive */
+@media (max-width: 900px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+        gap:8px;
+        border-radius: 0;
+        padding: 10px 0 10px 10px;
+        position: relative;
+    }
+    .nav a, .nav h2 {
+        display: none;
+        width: 100%;
+        text-align: left;
+        padding: 12px 18px;
+        margin: 0;
+        border-radius: 0;
+        background: none;
+        color: #fff;
+        font-size: 17px;
+    }
+       .nav button {
+    font-size: 28px;
+    border-radius: 100%;
+    width: 38px;
+    height: 38px;
+    background: orange;
+    color: #fff;
+    border: none;
+    margin-right: 8px;
+    font-weight: bold;
+    }
+    .nav.open a,
+    .nav.open h2,
+    .nav.open button {
+        display: block;
+        margin: 10px 0;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 18px;
+    }
+}
+/* int,left img,soc,footer responsive */
+@media (max-width: 500px) {
+    .ri h1 {
+        font-size:20px;
+    }
+    .ri p {
+        font-size:18px;
+    }
+       .footer-text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 900px) {
+    .int {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 90vw;
+        padding: 18px 2vw;
+    }
+    .ri,.left {
+        margin-left:9%;
+        width: 100%;
+        text-align: center;
+    }
+       .left img {
+       width: 50%;
+        max-width: 90vw;
+        
+    }  
+    .ri-button{margin-left:20%;
+        
+
+    }  
+}
